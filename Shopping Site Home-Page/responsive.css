@@ -1,0 +1,49 @@
+@media screen and (max-width:1260px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: max-content;
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+        height: min-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+    main{
+        width: 100vw;
+    }
+    .search{
+        width: 80vw;
+        justify-content: center;
+    }
+    .search input{
+        width: 80vw;
+    }
+    .search button{
+        width: 50vw;
+    }
+    .container{
+        width: 100vw;
+    }
+    .shop{
+        margin: 0;
+    }
+    .foot-panel2{
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+    .foot-panel2 ul{
+        margin: 20px;
+    }
+}

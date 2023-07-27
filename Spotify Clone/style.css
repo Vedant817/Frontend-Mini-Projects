@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Lumanosimo&family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Lumanosimo&family=Merriweather:ital@0;1&family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+nav{
+    font-family: 'Handjet', cursive;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: fit-content;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    font-size: x-large;
+    cursor: pointer;
+    padding: 10px;
+}
+ul li:hover{
+    color: rgb(40, 225, 40);
+}
+
+.brand img{
+    width: 44px;
+    margin-right: 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    padding: 5px;
+}
+.brand:hover{
+    color: white;
+    background-color: rgb(40, 225, 40);
+    border-radius: 10px;
+}
+.Subscribe{
+    background-color: rgb(40, 225, 40);
+    padding: 10px;
+    border-radius: 10px;
+}
+.Subscribe:hover{
+    background-color: green;
+}
+.container{
+    min-height: calc(100vh - 65px - 100px);
+    background-color: rgb(47, 46, 46);
+    color: white;
+    padding: 15px;
+    margin:0 10px;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    background-image: url(bg.jpg);
+}
+.songList{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+.songItem{
+    padding: 10px 5px;
+    margin: 10px 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    /* background-color: black; */
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(47, 46, 46); 
+}
+.songItem:hover{
+    background-color: rgb(23, 23, 23);
+}
+.songItem img{
+    height: 70px;
+    border-radius: 50%;
+}
+.songItem img:hover{
+    filter: brightness(60%);
+}
+.songItem span{
+    font-size: large;
+}
+.songItem i:hover{
+    color: rgb(6, 160, 6);
+}
+.name:hover{
+    color: rgb(6, 160, 6);
+}
+.bottom{
+    position: sticky;
+    height: fit-content;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+}
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons i{
+    margin: 15px;
+    cursor: pointer;
+}
+.icons i:hover{
+    color: rgb(6, 160, 6);
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-size: larger;
+    padding: 10px 20px;
+}
+.songInfo span{
+    margin: 10px 10px;
+    padding: 10px 0;
+    font-size: x-large;
+}
+.songInfo span:hover{
+    text-decoration: underline;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.progress{
+    display: flex;
+    justify-content: space-around;
+}
+.progress span{
+    margin: 0 15px;
+    font-size: large;
+}
+h1{
+    margin: 0 20px;
+}
+.name{
+    padding: 0 5px;
+}

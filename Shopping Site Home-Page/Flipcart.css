@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+    height: 10vh;
+    background-color: #2874f0;
+}
+
+nav {
+    margin-left: 200px;
+    height: 10vh;
+    width: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 30px; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.logo {
+    height: 7vh;
+    width: min-content;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav ul li {
+    justify-content: center;
+    width: 70px;
+    font-size: larger;
+    list-style: none;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 204, 255);
+    font-weight: 600;
+}
+
+.search input {
+    padding: 0 12px;
+    font-size: large;
+
+}
+
+.submit {
+    margin-left: -3px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.submit:hover {
+    background-color: gray;
+    color: white;
+}
+
+.container {
+    min-height: calc(100vh - 10vh - 10vh);
+}
+
+.slider {
+    margin: 12px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.slider img {
+    height: 400px;
+    width: 80vw;
+}
+
+.shop {
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.panel {
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+    width: 215px;
+    border-radius: 15px;
+}
+
+.card-item {
+    padding: 10px 24px;
+}
+
+.lines {
+    text-align: center;
+}
+
+.items-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.items-name:hover {
+    text-decoration: underline;
+}
+
+.Offers {
+    color: green;
+}
+
+.grab {
+    color: rgb(68, 68, 68);
+}
+
+.grab:hover {
+    color: black;
+}
+
+footer {
+    height: max-content;
+    padding-top: 20px;
+    background-color: #09306a;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foot-panel2 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    height: max-content;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.foot-panel2 ul p {
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.foot-panel2 li {
+    list-style: none;
+}
+
+.foot-panel2 li a {
+    line-height: 30px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
