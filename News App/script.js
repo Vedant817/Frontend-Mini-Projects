@@ -1,4 +1,4 @@
-let currentQuery = "sports"
+let currentQuery = "sports";
 let currentPage = 1;
 const fetchNews = async (page, q) => {
     console.log('Fetching News....');
