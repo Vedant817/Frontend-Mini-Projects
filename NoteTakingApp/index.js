@@ -9,7 +9,7 @@ app.use(express.urlencoded());
 const port = 3000;
 
 mongoose
-    .connect('mongodb+srv://vedantmahajan271:9rhbP6tEssRPyEgC>@cluster0.h8dn77o.mongodb.net/?retryWrites=true&w=majority')
+    .connect(process.env.MONGODB_URL)
     .then(() => console.log("MongoDB Connected"))
     .catch((error) => console.log(error));
 
