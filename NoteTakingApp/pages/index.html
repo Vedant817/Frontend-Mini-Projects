@@ -64,9 +64,10 @@
             })
             return response.json();
         }
+        //? Get the saved notes from the database.
         const fetchNotes = () => {
             let noteContainer = document.querySelector(".my-notes");
-            noteContainer.innerHTML='';
+            noteContainer.innerHTML = '';
             if (user && user.email) {
                 const notes = postData('/getnotes', { email: user.email })
                 notes.then((notes) => {
@@ -80,8 +81,7 @@
                     <p class="card-text">${element.description}</p>
                     <a href="#" class="card-link">Delete</a>
                 </div>
-            </div>` //? In the Delete fn get the element Id and then use the function to delete the note.
-                        
+            </div>`
                         noteContainer.innerHTML += note;
                     });
                 })
@@ -95,6 +95,7 @@
         if (!user || !user.token) {
             window.location = '/login'
         }
+        //? Adding the notes to the database.
         let submit = document.getElementById("submit")
         submit.addEventListener('click', async () => {
             let title = document.getElementById('title').value;

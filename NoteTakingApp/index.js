@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const note = require('./models/notes')
 const User = require('./models/user');
-const user = require("./models/user");
 const app = express();
 app.use(express.json()); //? These are the middleware used for destructing the object.
 app.use(express.urlencoded());
@@ -31,11 +30,10 @@ app.post("/getnotes", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
-//  const { userToken } = req.body;
     let user = await User.findOne(req.body);
     if(!user){
         res.status(200).json({success:true, message:'User Not found'});
-        Navigate('/login');
+        Navigate('/signup'); //* If no user then make them do create an account by signup
     }
     else{
         res.status(200).json({success: false, user:{email: user.email}, message:'User Found'});
@@ -43,15 +41,13 @@ app.post("/login", async (req, res) => {
 });
 
 app.post("/signup", async (req, res) => {
-    const { userToken } = req.body;
     console.log(req.body);
     let user= await User.create(req.body);
     res.status(200).json({success: true, user:user})
 });
 
 app.post("/addnote", async (req, res) => {
-    const { userToken } = req.body;
-    let note = await note.create(req,body)
+    let note = await note.create(req.body)
     res.status(200).json({success: true, note})
 });
 
